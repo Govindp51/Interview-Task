@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.eagle {
+    width: 66px;
+    height: 66px;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.images img {
+    width: 33px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+    background: linear-gradient(60deg,rgb(136, 223, 136),rgb(175, 196, 133),rgb(88, 122, 88));
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    background-color: rgb(209, 201, 201);
+    column-count: 3;
+    padding: 20px;
+    column-gap: 30px;
+    text-align: justify;
+    margin-top: -5px;
+}
+
+.hotel>button {
+    position: absolute;
+    top: 700px;
+    left: 60px;
+    padding: 10px;
+    width: 20%;
+    font-size: 25px;
+    background: linear-gradient(130deg, black, rgb(53, 51, 51), lightgray);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.footer {
+    padding: 30px;
+    margin: 0;
+    background-color: rgb(213, 217, 219);
+}
+
+.footer h1 {
+    margin-left: 30px;
+
+
+}
+
+.img-1 {
+    width: 30%;
+    display: inline-block;
+    margin: 20px 0 0 30px;
+}
+
+.img-1 p {
+    columns: unset;
+    margin: 10px 0 0 -20px;
+    background-color: transparent;
+    font-weight: 800;
+}
+
+.img-1>button {
+    font-size: 15px;
+    padding: 8px;
+    width: 33%;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.btn-center {
+    margin-left: 120px;
+}
+
+.btn-right {
+    margin-left: 240px;
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+    nav li {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    
+    }
+    .hotel .btn-hotel{
+        font-size: 14px;
+        padding: 5px;
+        top: 370px;
+    }
+
+    .hotel img{
+        height: 85vh;
+    }
+
+    .hotel p {
+        
+        height: max-content;
+        text-align: justify;
+        column-count: unset;
+
+    }
+
+    .footer {
+        background-color: rgb(38, 124, 117);
+    }
+
+    .footer h1 {
+        margin-left: 30px;
+    }
+
+    .img-1 h3 {
+        text-align: center;
+    }
+
+    .img-1 p {
+        text-align: justify;
+    }
+
+    .img-1 button {
+        margin-left: 30%;
+        background-color: rgb(29, 29, 27);
+    }
+
+    .img-1 img {
+        display: block;
+        margin-left: -17px;
+        border-radius: 15px;
+        border: 1px solid white;
+
+    }
+    .eagle, .images img{
+        position: relative;
+        top: -70px;
+    }
+    
+
+    .img-1 {
+        width: 100%;
+
+    }
+    .hotel>p {
+        background-color: rgb(250, 250, 241);
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .img-1 {
+        margin-left: 17px;
+    }
+
+    nav li {
+        margin-left: 20px;
+    }
+
+    .hotel>button {
+        top: 420px;
+        width: max-content;
+    }
+
+    .img-1>button {
+        width: max-content;
+    }
+
+    .btn-right {
+        margin-left: 110px;
+    }
+
+    .btn-center {
+        margin-left: 60px;
+    }
+
+    .btn-left {
+        margin-left: 1px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .img-1 {
+
+        margin-left: 22px;
+    }
+
+
+    .btn-right {
+        margin-left: 180px;
+    }
+
+    .btn-center {
+        margin-left: 85px;
+    }
+    .hotel>button {
+        top: 600px;
+    }
+
+}
